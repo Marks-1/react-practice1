@@ -1,13 +1,15 @@
 import React from "react";
 import "./style.css";
-import Header from './Header'
+import Header from './Header';
+import TodoItem from './TodoItem';
+import TodosData from './TodosData';
 
 function App() {
+  const todoItems = TodosData.map(item => <TodoItem key={item.id} item={item} />)
   return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
-      <Header/>
+
+    <div className="data-list">
+      {todoItems}
     </div>
   );
 }
