@@ -7,9 +7,9 @@ import TodosData from './TodosData';
 function App() {
   const todoItems = TodosData.map(item => <TodoItem key={item.id} item={item} />)
   return (
-
-    <div className="data-list">
-      {todoItems}
+      <div className="data-list">
+        <Header/>
+        {todoItems}
     </div>
   );
 }

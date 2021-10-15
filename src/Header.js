@@ -1,20 +1,18 @@
-import React from 'react'
+import React from 'react';
 
 class Header extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
-      this.state= {
-        name: 'Mark',
-        age: 27
-      }
+    this.state = {
+      title: `Mark's Todo's`,
+    };
   }
-  render(){
-    return(
+  render() {
+    return (
       <div>
-        <h2>Name: {this.state.name}</h2>
-        <h2>Age: {this.state.age}- years old</h2>
+        <h1>{this.state.title}</h1>
       </div>
-    )
+    );
   }
 }
 
